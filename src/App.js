@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Stack } from '@mui/material';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import SearchPage from './components/SearchPage';
 
-function App() {
+const queryClient = new QueryClient();
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Stack
+        spacing={2}
+        width='80%'
+        display='flex'
+        justifyContent='center'
+        alignItems='center'
+      >
+        <SearchPage />
+      </Stack>
+    </QueryClientProvider>
   );
-}
+};
 
 export default App;
