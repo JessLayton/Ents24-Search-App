@@ -13,11 +13,15 @@ export default {
 const Template = (args) => {
   const [searchTerm, setSearchTerm] = useState('');
   return (
-    <TextInput searchTerm={searchTerm} setSearchTerm={setSearchTerm} {...args} />
-  )
-}
+    <TextInput
+      searchTerm={searchTerm}
+      setSearchTerm={setSearchTerm}
+      {...args}
+    />
+  );
+};
 
 export const DefaultTextInput = Template.bind({});
 DefaultTextInput.args = {
-  isLoading: false
+  isLoading: false,
 };

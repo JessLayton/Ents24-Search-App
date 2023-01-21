@@ -1,5 +1,8 @@
 import { Stack } from '@mui/material';
 import { QueryClient, QueryClientProvider } from 'react-query';
+
+import Container from '@mui/material/Container';
+
 import SearchPage from './SearchPage';
 
 const queryClient = new QueryClient();
@@ -7,15 +10,11 @@ const queryClient = new QueryClient();
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <Stack
-        spacing={2}
-        width='80%'
-        display='flex'
-        justifyContent='center'
-        alignItems='center'
-      >
-        <SearchPage />
-      </Stack>
+      <Container maxWidth='xl'>
+        <Stack spacing={2}>
+          <SearchPage />
+        </Stack>
+      </Container>
     </QueryClientProvider>
   );
 };

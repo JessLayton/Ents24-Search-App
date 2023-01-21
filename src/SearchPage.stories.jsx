@@ -18,16 +18,15 @@ export default {
 const Template = (args) => {
   return (
     <QueryClientProvider client={queryClient}>
-
-  <SearchPage {...args} />
-  </QueryClientProvider>
-
-  )}
+      <SearchPage {...args} />
+    </QueryClientProvider>
+  );
+};
 
 export const DefaultSearchPage = Template.bind({});
 
 DefaultSearchPage.play = async ({ canvasElement }) => {
-  const canvas= within(canvasElement);
+  const canvas = within(canvasElement);
 
   const textInput = canvas.getByLabelText('Search', {
     selector: 'input',
@@ -40,7 +39,5 @@ DefaultSearchPage.play = async ({ canvasElement }) => {
   await waitFor(() => {
     const firstResult = canvas.getAllByRole('img')[0];
     expect(firstResult).toBeInTheDocument();
-
-  }) 
-    
+  });
 };

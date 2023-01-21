@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import ResultsItem from './ResultsItem';
 
 const NoResultsPane = ({ isLoading }) =>
-  !isLoading && <Typography>No results found</Typography>;
+  !isLoading && <Typography>No results found 😿</Typography>;
 
 const ResultsPane = ({ isLoading, searchResults }) => {
   if (searchResults?.data) {
@@ -11,7 +11,9 @@ const ResultsPane = ({ isLoading, searchResults }) => {
       .flat()
       .filter((data) => data.type !== 'location');
     if (!results.length) {
-      return <NoResultsPane isLoading={isLoading} data-testid='no-results-pane' />;
+      return (
+        <NoResultsPane isLoading={isLoading} data-testid='no-results-pane' />
+      );
     }
     return (
       <>

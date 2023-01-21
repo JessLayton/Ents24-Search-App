@@ -11,16 +11,14 @@ export default {
   },
   argTypes: {
     item: {
-      control: 'object'
-    }
+      control: 'object',
+    },
   },
 };
 
 const Template = (args) => {
-  return (
-    <ResultsItem {...args} />
-  )
-}
+  return <ResultsItem {...args} />;
+};
 
 export const DefaultResultsItem = Template.bind({});
 DefaultResultsItem.args = {

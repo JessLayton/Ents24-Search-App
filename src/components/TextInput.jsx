@@ -7,7 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const TextInput = ({ searchTerm, setSearchTerm, isLoading }) => {
   return (
-    <FormControl fullWidth sx={{ m: 1 }}>
+    <FormControl fullWidth>
       <InputLabel htmlFor='ent-search-field'>Search</InputLabel>
       <OutlinedInput
         id='ent-search-field'

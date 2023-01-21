@@ -25,15 +25,15 @@ npm run storybook
 ```
 
 The Controls tab allows you to change the state of the components.  
-The Interactions tab simulates user interactions with the page and its separate components. 
+The Interactions tab simulates user interactions with the page and its separate components.
 
 ### Tests
 
 Interaction tests are set up with storybook testing library (this uses Jest and Testing library in the background)  
 https://storybook.js.org/docs/react/writing-tests/interaction-testing  
-To run the tests:  
+To run the tests:
 
-Make sure the application is running on Storybook. Then run:    
+Make sure the application is running on Storybook. Then run:
 
 ```
 npm test-storybook

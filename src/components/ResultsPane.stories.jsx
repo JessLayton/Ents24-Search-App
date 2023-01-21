@@ -12,5 +12,9 @@ export default {
   },
 };
 
-export const DefaultResultsPane = () => <ResultsPane isLoading={false} searchResults={searchResults} />
-export const NoResultsPane = () => <ResultsPane isLoading={false} searchResults={emptyResults} />
+export const DefaultResultsPane = () => (
+  <ResultsPane isLoading={false} searchResults={searchResults} />
+);
+export const NoResultsPane = () => (
+  <ResultsPane isLoading={false} searchResults={emptyResults} />
+);
