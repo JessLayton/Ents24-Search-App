@@ -11,11 +11,11 @@ const ResultsPane = ({ isLoading, searchResults }) => {
       .flat()
       .filter((data) => data.type !== 'location');
     if (!results.length) {
-      return <NoResultsPane isLoading={isLoading} />;
+      return <NoResultsPane isLoading={isLoading} data-testid='no-results-pane' />;
     }
     return (
       <>
-        <ImageList>
+        <ImageList data-testid='results-pane'>
           {results.map((result) => (
             <ResultsItem item={result} key={result.id} />
           ))}

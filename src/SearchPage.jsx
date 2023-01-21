@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useQuery } from 'react-query';
 
-import ResultsPane from './ResultsPane';
-import TextInput from './TextInput';
+import ResultsPane from './components/ResultsPane';
+import TextInput from './components/TextInput';
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState('');

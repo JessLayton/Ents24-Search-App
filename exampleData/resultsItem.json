@@ -1,0 +1,21 @@
+{
+  "id": 60387,
+  "name": "Sanctum Soho Hotel",
+  "numEvents": 0,
+  "town": "London",
+  "type": "venue",
+  "image": "https://ents24.imgix.net/image/000/208/600/2d4215ea45b0bec5245a9d096ea5f427dcea2830.jpg?w=50&h=38&auto=format",
+  "uri": "/london-events/sanctum-soho-hotel",
+  "views": 1,
+  "popularity": 14,
+  "location": {
+    "lat": 51.511742,
+    "lon": -0.138398
+  },
+  "keywords": [
+    "Amused Moose Soho",
+    "SanctumSoho",
+    "Karma Sanctum Hotel",
+    "Sanctum Soho Hotel London"
+  ]
+}

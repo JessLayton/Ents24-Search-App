@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import SearchPage from './components/SearchPage';
+import SearchPage from './SearchPage';
 
 const queryClient = new QueryClient();
 
