@@ -8,7 +8,7 @@ export default {
   title: 'Results Pane',
   component: ResultsPane,
   parameters: {
-    layout: 'fullscreen',
+    layout: 'padded',
   },
 };
 

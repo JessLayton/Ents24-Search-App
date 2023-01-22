@@ -11,7 +11,7 @@ export default {
   title: 'Search Page',
   component: SearchPage,
   parameters: {
-    layout: 'fullscreen',
+    layout: 'padded',
   },
 };
 

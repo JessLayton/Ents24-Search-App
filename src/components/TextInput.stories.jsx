@@ -6,7 +6,7 @@ export default {
   title: 'Text Input',
   component: TextInput,
   parameters: {
-    layout: 'fullscreen',
+    layout: 'padded',
   },
 };
 
