@@ -37,7 +37,10 @@ DefaultSearchPage.play = async ({ canvasElement }) => {
   });
 
   await waitFor(() => {
-    const firstResult = canvas.getAllByRole('img')[0];
+    const results = canvas.getAllByRole('img');
+    const firstResult = results[0];
+
+    expect(results.length).toEqual(7);
     expect(firstResult).toBeInTheDocument();
   });
 };

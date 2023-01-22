@@ -18,7 +18,11 @@ export default {
 };
 
 const Template = (args) => {
-  return <div style={{padding: '20px 350px'}}><ResultsItem {...args} /></div>;
+  return (
+    <div style={{ padding: '20px 350px' }}>
+      <ResultsItem {...args} />
+    </div>
+  );
 };
 
 export const DefaultResultsItem = Template.bind({});
